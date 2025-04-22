@@ -18,10 +18,9 @@ const Index: React.FC = () => {
           />
           {/* Bottom gradient overlay to blend image into next section */}
           <div
-            className="absolute left-0 right-0 bottom-0 h-44 pointer-events-none"
+            className="absolute left-0 right-0 bottom-0 h-64 pointer-events-none"
             style={{
-              background:
-                "linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
+              background: "linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 30%, rgba(255,255,255,0.7) 70%, rgba(255,255,255,1) 100%)",
             }}
           />
         </div>
@@ -39,4 +38,3 @@ const Index: React.FC = () => {
 };
 
 export default Index;
-
