@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { EmailInput } from "@/components/ui/EmailInput";
 
 export const Footer: React.FC = () => {
   return (
