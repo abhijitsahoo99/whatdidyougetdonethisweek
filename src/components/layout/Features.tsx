@@ -1,3 +1,4 @@
+
 import React from "react";
 import { FeatureCard } from "../ui/FeatureCard";
 
@@ -24,9 +25,9 @@ export const Features: React.FC = () => {
   ];
 
   return (
-    <section className="bg-white flex w-full flex-col overflow-hidden items-center justify-center px-16 py-[146px] max-md:max-w-full max-md:px-5 max-md:py-[100px]">
+    <section className="bg-white flex w-full flex-col overflow-hidden items-center justify-center px-8 md:px-16 py-[100px] md:py-[146px] max-md:max-w-full">
       <div className="flex mb-[-29px] items-center gap-[40px_41px] flex-wrap max-md:mb-2.5 max-w-[1200px] w-full">
-        <div className="self-stretch min-w-60 text-2xl text-black w-[363px] mx-auto space-y-3">
+        <div className="self-stretch min-w-60 text-lg md:text-2xl text-black w-[363px] mx-auto space-y-3">
           {features.map((feature, index) => (
             <FeatureCard key={index} {...feature} />
           ))}
