@@ -1,14 +1,11 @@
 import React from "react";
 import { EmailInput } from "../ui/EmailInput";
-
 export const Hero: React.FC = () => {
   const handleEmailSubmit = (email: string) => {
     console.log("Email submitted:", email);
     // Handle email submission
   };
-
-  return (
-    <section className="bg-white flex w-full flex-col overflow-hidden items-stretch justify-center px-[75px] py-[207px] max-md:max-w-full max-md:px-5 max-md:py-[100px]">
+  return <section className="bg-white flex w-full flex-col overflow-hidden items-stretch justify-center max-md:max-w-full px-[64px] py-[207px] my-0">
       <div className="flex mb-[-41px] w-full flex-col items-stretch max-md:max-w-full max-md:mb-2.5">
         <div className="w-full text-black text-center max-md:max-w-full">
           <div className="flex w-full flex-col items-stretch justify-center max-md:max-w-full">
@@ -25,6 +22,5 @@ export const Hero: React.FC = () => {
           <EmailInput onSubmit={handleEmailSubmit} />
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
