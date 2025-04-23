@@ -1,4 +1,3 @@
-
 import React from "react";
 import { FeatureCard } from "../ui/FeatureCard";
 
@@ -25,16 +24,25 @@ export const Features: React.FC = () => {
   ];
 
   return (
-    <section className="bg-white flex w-full flex-col overflow-hidden items-center justify-center px-8 md:px-16 py-[100px] md:py-[146px] max-md:max-w-full">
+    <section className="bg-white flex w-full flex-col overflow-hidden items-center justify-center px-16 py-[146px] max-md:max-w-full max-md:px-5 max-md:py-[100px]">
       <div className="flex mb-[-29px] items-center gap-[40px_41px] flex-wrap max-md:mb-2.5 max-w-[1200px] w-full">
-        <div className="self-stretch min-w-60 text-lg md:text-2xl text-black w-[363px] mx-auto space-y-3">
+        <div className="self-stretch min-w-60 text-2xl text-black w-[363px] mx-auto space-y-3">
           {features.map((feature, index) => (
             <FeatureCard key={index} {...feature} />
           ))}
         </div>
         <div className="self-stretch min-w-60 w-[748px] mx-auto rounded-[0px_0px_0px_0px] max-md:max-w-full">
           <div className="flex flex-col relative min-h-[540px] w-full pt-[78px] pb-2 px-[75px] max-md:max-w-full max-md:px-5">
-            <img alt="Email interface demonstration" className="absolute h-full w-full inset-0 object-fill" src="/lovable-uploads/fe5410b4-511f-4646-8cd4-d3d322888b3b.png" />
+            <img
+              alt="Email interface demonstration"
+              className="absolute h-full w-full inset-0 object-fill hidden md:block"
+              src="/lovable-uploads/fe5410b4-511f-4646-8cd4-d3d322888b3b.png"
+            />
+            <img
+              alt="Email interface demonstration mobile"
+              className="absolute h-full w-full inset-0 object-fill md:hidden"
+              src="/lovable-uploads/chatmobile.png"
+            />
           </div>
         </div>
       </div>
