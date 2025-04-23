@@ -19,8 +19,8 @@ export const Footer: React.FC = () => {
         </div>
         <div className="w-full text-base md:text-xl text-black font-medium text-center mt-10 md:mt-[75px] max-md:max-w-full">
           <hr className="border-black border-solid" />
-          <div className="flex w-full items-center gap-[40px_100px] justify-between flex-wrap mt-3 max-md:max-w-full">
-            <div className="self-stretch min-w-60 my-auto max-md:max-w-full">
+          <div className="flex w-full items-center gap-[20px_100px] justify-center flex-wrap mt-3 max-md:max-w-full">
+            <div className="self-stretch min-w-60 my-auto max-md:max-w-full text-lg md:text-xl">
               made with love by{" "}
               <a
                 href="https://twitter.com/kb24x7"
@@ -37,7 +37,7 @@ export const Footer: React.FC = () => {
               </a>{" "}
               <span className="italic">(say hi!)</span>
             </div>
-            <div className="self-stretch min-w-60 my-auto">
+            <div className="self-stretch min-w-60 my-auto text-lg md:text-xl">
               <Link
                 to="/copyright"
                 className="hover:text-[rgba(2,3,222,1)] transition-colors"
